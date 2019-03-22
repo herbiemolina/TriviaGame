@@ -66,6 +66,7 @@ function stop() {
     $("#b").html("<h1>" + response.results[0].incorrect_answers[0] + "</h1>");
     $("#c").html("<h2>" + response.results[0].incorrect_answers[1] + "</h2>");
     $("#d").html("<h2>" + response.results[0].incorrect_answers[2] + "</h2>");
+
   })
   
 }
