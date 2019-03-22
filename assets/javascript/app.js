@@ -60,8 +60,8 @@ function stop() {
   .then(function(response) {
     console.log(response);
 
-    // write content to html
-    $("#q").html("<h1>" + response.results + " Weather Details</h1>");
+    // write content to html. object has numbers and js doesn't like numbers.
+    $("#q").html("<h1>" + response.results[0].question + "</h1>");
   })
   
 }
