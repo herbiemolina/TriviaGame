@@ -1,5 +1,30 @@
 body {
-    background: url("../images/moonscape.jpg");
+    /* background: url("../images/moonscape.jpg"); */
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    text-align: center
+}
+
+header {
+    
+    z-index: 69;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+
+#box {
+    background: whitesmoke;
+    margin: 20px 300px 20px 300px
+}
+
+#questions {
+    z-index: 100;
+    background: gray;
+}
+
+#choices {
+    color: whitesmoke;
 }
