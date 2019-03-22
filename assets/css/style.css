@@ -13,6 +13,7 @@ header {
     overflow: auto;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
+    font-size: 39px
 }
 
 #box {

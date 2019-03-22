@@ -51,7 +51,6 @@ function stop() {
     clockRunning = false;
   }
 
-
   // ajax call to trivia api
   $.ajax({
     url: queryURL,
@@ -68,5 +67,34 @@ function stop() {
     $("#d").html("<h2>" + response.results[0].incorrect_answers[2] + "</h2>");
 
   })
+
+
+
+
+$("#next").on("click", next);
+
+function  next() {
+
+  
+  // ajax call to trivia api
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  })
+  .then(function(response) {
+    console.log(response);
+
+    // write content to html. object has numbers and js doesn't like numbers.
+    $("#q").html("<h1>" + response.results[0].question + "</h1>");
+    $("#a").html("<h2>" + response.results[0].correct_answer + "</h2>");
+    $("#b").html("<h1>" + response.results[0].incorrect_answers[0] + "</h1>");
+    $("#c").html("<h2>" + response.results[0].incorrect_answers[1] + "</h2>");
+    $("#d").html("<h2>" + response.results[0].incorrect_answers[2] + "</h2>");
+
+  })
+
+}
+
+
   
 }
